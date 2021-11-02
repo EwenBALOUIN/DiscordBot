@@ -30,9 +30,10 @@ async def miaou(ctx):
 @bot.command(name='wouaf', help='Wouaf from an angry Gizmo')
 async def wouaf(ctx):
     author = ctx.message.author
-    wouaf = "Bon toutou 🐶"
+    wouaf = "Bon toutou 🐶 @P N#4510"
     await ctx.send(wouaf)
 
+@commands.has_role("BDE-modérateur")
 @bot.command(name='wtf', help='WTF')
 async def wtf(ctx):
     url = "https://nekobot.xyz/api/image?type=coffee"

@@ -10,6 +10,7 @@ class Cleaner(commands.Cog):
         self.bot = bot
         self._last_member = None
 
+    @commands.has_role("BDE-modérateur")
     @commands.command(name='clear')
     async def clear_channel(self, ctx, number=1):
         deleted_all = 0

@@ -10,10 +10,6 @@ class Greetings(commands.Cog):
         self.bot = bot
         self._last_member = None
 
-    @commands.command(name='pepito')
-    async def test(self,ctx):
-        await ctx.send("test!")
-
     async def set_adherent(self, member):
         role = get(member.guild.roles, name=str(BASE_ROLE))
         await member.add_roles(role)
